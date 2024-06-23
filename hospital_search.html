@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/hospital_search.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="shortcut icon" href="images/logo1.png" type="image/x-icon">
+  <title>الخدمات - التأمين الصحي الشامل</title>
+</head>
+
+<body>
+
+  <!-- Navbar Section -->
+
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="height: 92px;">
+
+    <div class="container-fluid">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-ul">
+        <div class="nav-menu">
+
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="border: none;">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <li>
+              <a class="navbar-brand active" href="index.php" style="color: rgb(2, 2, 105); ">الصفحة الرئيسية</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active " aria-current="page" href="about-us.php" style="color: rgb(2, 2, 105);">معلومات عنا</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: rgb(2, 2, 105); margin-right: 10px; ">
+              الخدمات
+              </a>
+              <ul class="dropdown-menu" style="direction: rtl; text-align:right">
+                <li><a class="dropdown-item" href="vaccine_choice.php" style="direction: rtl; text-align:right">
+                  مُتابعة التطعيمات
+                </a></li>
+                <li><a class="dropdown-item" href="service_choice.php"style="direction: rtl; text-align:right">
+                  الحصول على الخدمات  
+                </a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active mx-4" href="FAQ.php" style="color: rgb(2, 2, 105);">الأسئلة الشائعة</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#" style="color: rgb(2, 2, 105); font-weight: bold;"> المساعدة</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active mx-4" aria-current="page" href="contact_us.php" style="color: rgb(2, 2, 105); "> تواصل معنا</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="Welcome.php" style="color: rgb(2, 2, 105);"> دخول / تسجيل</a>
+            </li>
+
+            <li>
+              <form action="https://www.google.com/search" method="get">
+                <div class="input-group mb-3 search">
+                  <input style="border-top-right-radius: 15px; border-bottom-right-radius: 15px; width: 90px;" type="text" class="form-control search-input" placeholder="بحث" aria-label="" aria-describedby="basic-addon1">
+
+                  <div class="input-group-prepend ">
+                    <button style="border: none; border-top-right-radius:0px ; border-bottom-right-radius: 0px; border-top-left-radius:15px ;border-bottom-left-radius: 15px;" class="btn btn-outline-light bg-secondary" type="button"><i class="fas fa-search "></i></button>
+                  </div>
+                </div>
+              </form>
+            </li>
+
+      </ul>
+      <img src="images/logo1.png" alt="logo" width="90px" height="80px" class="logo">
+
+
+    </div>
+
+    </div>
+    </div>
+  </nav>
+  <!-- end navbar-->
+
+   <!-- Start hospital Section -->
+   <div class="hospital-content">
+    <div class="hospital-title2">
+        <h1 class="text-center font-weight-bold">
+            للحصول على أقرب مستشفى اكتب مدينتك هنا
+        </h1>
+    </div>
+
+    <div class="search container mt-5"  dir="rtl">
+        <input id="searchbar" onkeyup="search_animal()" type="text"
+        name="search" placeholder="بحث في الأسئلة">
+
+
+        <div class="accordion" id="accordionExample list">
+
+            <div class="accordion-item animals">
+              <h2 class="accordion-header" id="headingOne" >
+                <button dir="rtl" class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    المستشفى الكويتى التخصصى
+                </button>
+              </h2>
+              <div dir="rtl" id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body ">
+                    ش عمر بن الخطاب, بجوار مستشفى التأمين الصحى, بنها, القليوبية
+                    <br>
+                    التليفون:
+                    <a href="tel:0133236047" style="text-decoration: none; " >    0133236047 -</a>
+                  <a href="tel:0133236091" style="text-decoration: none;" >    0133236091 -</a>
+                  <a href="tel:0133236092" style="text-decoration: none;" >    0133236092 </a>
+
+                    <br>
+                    <span>رابط العنوان :</span>
+                    <a href="https://goo.gl/maps/sR1d9QGp6iKZLwr3A" target="_blank" style="text-decoration: none;">
+                          https://goo.gl/maps/sR1d9QGp6iKZLwr3A
+                    </a>
+                </div> <!-- End Accordion Body -->
+              </div> <!-- End Accordion Collapse -->
+            </div> <!-- End Accordion Item -->
+
+            
+            <div class="accordion-item animals">
+              <h2 class="accordion-header" id="headingtwo" >
+                <button dir="rtl" class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#collapsetwo" aria-expanded="true" aria-controls="collapsetwo">
+                    عيادة الخانكة الشاملة
+                </button>
+              </h2>
+              <div dir="rtl" id="collapsetwo" class="accordion-collapse collapse show" aria-labelledby="headingtwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body ">
+                مساكن الايواء ,الخانكة, بنها,القليوبية
+                    <br>
+                التليفون:
+                <a href="tel:0244693949" style="text-decoration: none;" >    0244693949 -</a>
+              <a href="tel:0244690272" style="text-decoration: none;" >    0244690272 </a>
+                    <br>
+                    <span>رابط العنوان :</span>
+                    <a href="https://goo.gl/maps/9zetU3zaKTdNzK8A8" target="_blank" style="text-decoration: none;">
+                        https://goo.gl/maps/9zetU3zaKTdNzK8A8
+                    </a>
+                </div> <!-- End Accordion Body -->
+              </div> <!-- End Accordion Collapse -->
+            </div> <!-- End Accordion Item -->
+            
+            <div class="accordion-item animals">
+                <h2 class="accordion-header" id="heading3" >
+                  <button dir="rtl" class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="true" aria-controls="collapse3">
+                عيادة العبور الشاملة    
+                </button>
+                </h2>
+                <div dir="rtl" id="collapse3" class="accordion-collapse collapse show" aria-labelledby="heading3" data-bs-parent="#accordionExample">
+                  <div class="accordion-body ">
+                    شارع متولي الشعراوي, الخانكة , بنها,القليوبية
+                      <br>
+                      التليفون:
+                      <a href="tel:0244793848" style="text-decoration: none;" >    0244793848
+                    </a>
+  
+                      <br>
+                      <span>رابط العنوان :</span>
+                      <a href="https://goo.gl/maps/2ksXq8BqNGxdo7iT8" target="_blank" style="text-decoration: none;">
+                        https://goo.gl/maps/2ksXq8BqNGxdo7iT8
+                      </a>
+                  </div> <!-- End Accordion Body -->
+                </div> <!-- End Accordion Collapse -->
+              </div> <!-- End Accordion Item -->
+
+              <div class="accordion-item animals">
+                <h2 class="accordion-header" id="heading4" >
+                  <button dir="rtl" class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="true" aria-controls="collapse4">
+                عيادة القناطر الخيرية الشاملة 
+                </button>
+                </h2>
+                <div dir="rtl" id="collapse4" class="accordion-collapse collapse show" aria-labelledby="heading4" data-bs-parent="#accordionExample">
+                  <div class="accordion-body ">
+                    التقسيم السياحي, القناطر الخيرية, بنها,القليوبيه
+                      <br>
+                      التليفون:
+                      <a href="tel:0242186071" style="text-decoration: none;" >   0242186071 
+                    </a>
+  
+                      <br>
+                      <span>رابط العنوان :</span>
+                      <a href="https://goo.gl/maps/vZYmcmDtMxjaqPM48" target="_blank" style="text-decoration: none;">
+                        https://goo.gl/maps/vZYmcmDtMxjaqPM48
+                      </a>
+                  </div> <!-- End Accordion Body -->
+                </div> <!-- End Accordion Collapse -->
+              </div> <!-- End Accordion Item -->
+              
+              <div class="accordion-item animals">
+                <h2 class="accordion-header" id="heading5" >
+                  <button dir="rtl" class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="true" aria-controls="collapse5">
+                    عيادة النيل الشاملة 
+                </button>
+                </h2>
+                <div dir="rtl" id="collapse5" class="accordion-collapse collapse show" aria-labelledby="heading5" data-bs-parent="#accordionExample">
+                  <div class="accordion-body ">
+                    ميدان المؤسسة - شبرا الخيمة - بنها - القليوبية
+                      <br>
+                      التليفون:
+                      <a href="tel:0244441948" style="text-decoration: none;" >   0244441948 </a>
+                      <a href="tel:0244469381" style="text-decoration: none;" >   0244469381 </a>
+  
+                      <br>
+                      <span>رابط العنوان :</span>
+                      <a href="https://goo.gl/maps/GaR4yZzGDydpnu9L7" target="_blank" style="text-decoration: none;">
+                        https://goo.gl/maps/GaR4yZzGDydpnu9L7
+                      </a>
+                  </div> <!-- End Accordion Body -->
+                </div> <!-- End Accordion Collapse -->
+              </div> <!-- End Accordion Item -->
+
+              
+              <div class="accordion-item animals">
+                <h2 class="accordion-header" id="heading6" >
+                  <button dir="rtl" class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="true" aria-controls="collapse6">
+                    عيادة بنها الشاملة
+                </button>
+                </h2>
+                <div dir="rtl" id="collapse6" class="accordion-collapse collapse show" aria-labelledby="heading6" data-bs-parent="#accordionExample">
+                  <div class="accordion-body ">
+                    ش فريد ندا بنها - القليوبية 
+                    <br>       
+                    قريب من: امام مستشفى الاطفال التخصصى ببنها
+                      <br>
+                      التليفون:
+                      <a href="tel:0133233402" style="text-decoration: none;" >   0133233402 </a>
+  
+                      <br>
+                      <span>رابط العنوان :</span>
+                      <a href="https://goo.gl/maps/cqsjPUWKhqrXTeoA9" target="_blank" style="text-decoration: none;">
+                        https://goo.gl/maps/cqsjPUWKhqrXTeoA9
+                      </a>
+                  </div> <!-- End Accordion Body -->
+                </div> <!-- End Accordion Collapse -->
+              </div> <!-- End Accordion Item -->
+
+
+              <div class="accordion-item animals">
+                <h2 class="accordion-header" id="heading7" >
+                  <button dir="rtl" class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#collapse7" aria-expanded="true" aria-controls="collapse7">
+                    عيادة بهتيم الشاملة
+                </button>
+                </h2>
+                <div dir="rtl" id="collapse7" class="accordion-collapse collapse show" aria-labelledby="heading7" data-bs-parent="#accordionExample">
+                  <div class="accordion-body ">
+                    بهتيم -  بنها - القليوبية 
+                    <br>       
+                    قريب من: بجوار كريستال عصفور
+                      <br>
+                      التليفون:
+                      <a href="tel:0248265351" style="text-decoration: none;" >   0248265351 </a>
+  
+                      <br>
+                      <span>رابط العنوان :</span>
+                      <a href="https://goo.gl/maps/HbQczkySWDm1oCzA7" target="_blank" style="text-decoration: none;">
+                        hhttps://goo.gl/maps/HbQczkySWDm1oCzA7
+                      </a>
+                  </div> <!-- End Accordion Body -->
+                </div> <!-- End Accordion Collapse -->
+              </div> <!-- End Accordion Item -->
+
+
+              <div class="accordion-item animals">
+                <h2 class="accordion-header" id="heading8" >
+                  <button dir="rtl" class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#collapse8" aria-expanded="true" aria-controls="collapse8">
+                    عيادة شبين القناطر الشاملة
+                </button>
+                </h2>
+                <div dir="rtl" id="collapse8" class="accordion-collapse collapse show" aria-labelledby="heading8" data-bs-parent="#accordionExample">
+                  <div class="accordion-body ">
+                    طريق منيا القمح تقاطع طريق بنها شبين القناطر - القليوبية
+                    <br>
+                    قريب من: داخل مستشفى شبين القناطر المركزى
+                      <br>
+                      التليفون:
+                      <a href="tel: 0132721143" style="text-decoration: none;" >    0132721143 </a>
+  
+                      <br>
+                      <span>رابط العنوان :</span>
+                      <a href="https://goo.gl/maps/ymE3GyRUqHbTP6By6" target="_blank" style="text-decoration: none;">
+                        https://goo.gl/maps/ymE3GyRUqHbTP6By6
+                      </a>
+                  </div> <!-- End Accordion Body -->
+                </div> <!-- End Accordion Collapse -->
+              </div> <!-- End Accordion Item -->
+
+              <div class="accordion-item animals">
+                <h2 class="accordion-header" id="heading9" >
+                  <button dir="rtl" class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#collapse9" aria-expanded="true" aria-controls="collapse9">
+                    عيادة طوخ الشاملة
+                </button>
+                </h2>
+                <div dir="rtl" id="collapse9" class="accordion-collapse collapse show" aria-labelledby="heading9" data-bs-parent="#accordionExample">
+                  <div class="accordion-body ">
+                    ش احمد بن عبد العزيز - طوخ - بنها - القليوبيه
+                    <br>
+                    قريب من: بجوار مستشفى طوخ المركزى
+                      <br>
+                      التليفون:
+                      <a href="tel: 0132479614" style="text-decoration: none;" >    0132479614 </a>
+  
+                      <br>
+                      <span>رابط العنوان :</span>
+                      <a href="https://goo.gl/maps/ymE3GyRUqHbTP6By6" target="_blank" style="text-decoration: none;">
+                        https://goo.gl/maps/ymE3GyRUqHbTP6By6
+                      </a>
+                  </div> <!-- End Accordion Body -->
+                </div> <!-- End Accordion Collapse -->
+              </div> <!-- End Accordion Item -->
+
+              <div class="accordion-item animals">
+                <h2 class="accordion-header" id="heading10" >
+                  <button dir="rtl" class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#collapse10" aria-expanded="true" aria-controls="collapse10">
+                    عيادة قليوب الشاملة
+                </button>
+                </h2>
+                <div dir="rtl" id="collapse10" class="accordion-collapse collapse show" aria-labelledby="heading10" data-bs-parent="#accordionExample">
+                  <div class="accordion-body ">
+                    قليوب - بنها - القليوبية
+                    <br>
+                    قريب من: خلف مستشفى قليوب المركزى
+                      <br>
+                      التليفون:
+                      <a href="tel: 0242130102" style="text-decoration: none;" >    0242130102 </a>
+  
+                      <br>
+                      <span>رابط العنوان :</span>
+                      <a href="https://goo.gl/maps/ymE3GyRUqHbTP6By6" target="_blank" style="text-decoration: none;">
+                        https://goo.gl/maps/ymE3GyRUqHbTP6By6
+                      </a>
+                  </div> <!-- End Accordion Body -->
+                </div> <!-- End Accordion Collapse -->
+              </div> <!-- End Accordion Item -->
+
+              <div class="accordion-item animals">
+                <h2 class="accordion-header" id="heading11" >
+                  <button dir="rtl" class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#collapse11" aria-expanded="true" aria-controls="collapse11">
+                    عيادة كفر شكر الشاملة
+                </button>
+                </h2>
+                <div dir="rtl" id="collapse11" class="accordion-collapse collapse show" aria-labelledby="heading11" data-bs-parent="#accordionExample">
+                  <div class="accordion-body ">
+                    ش طراد النيل كفر شكر - بنها - القليوبية
+                    <br>
+                    قريب من: داخل مستشفى كفر شكر المركزى
+                      <br>
+                      التليفون:
+                      <a href="tel: 0132517007" style="text-decoration: none;" >    0132517007 </a>
+  
+                      <br>
+                      <span>رابط العنوان :</span>
+                      <a href="https://goo.gl/maps/zPU2dLGZ4cAyabn48" target="_blank" style="text-decoration: none;">
+                        https://goo.gl/maps/zPU2dLGZ4cAyabn48
+                      </a>
+                  </div> <!-- End Accordion Body -->
+                </div> <!-- End Accordion Collapse -->
+              </div> <!-- End Accordion Item -->
+
+              <div class="accordion-item animals">
+                <h2 class="accordion-header" id="heading12" >
+                  <button dir="rtl" class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#collapse12" aria-expanded="true" aria-controls="collapse12">
+                    مستشفى بنها للتأمين الصحى
+                </button>
+                </h2>
+                <div dir="rtl" id="collapse12" class="accordion-collapse collapse show" aria-labelledby="heading12" data-bs-parent="#accordionExample">
+                  <div class="accordion-body ">
+                    شارع الاستاد - بنها - القليوبيه - مصر
+                    <br>
+                      التليفون:
+                      <a href="tel: 0133230576" style="text-decoration: none;" >    0133230576 </a>
+                      <a href="tel: 0133233402" style="text-decoration: none;" >    0133233402 </a>
+  
+                      <br>
+                      <span>رابط العنوان :</span>
+                      <a href="https://goo.gl/maps/6eY3PXADCJL7Jb5w8" target="_blank" style="text-decoration: none;">
+                        https://goo.gl/maps/6eY3PXADCJL7Jb5w8
+                      </a>
+                  </div> <!-- End Accordion Body -->
+                </div> <!-- End Accordion Collapse -->
+              </div> <!-- End Accordion Item -->
+
+
+          </div> <!-- End Accordion -->
+    </div> <!-- End Search Input -->
+</div> <!-- End faq-content2 -->
+
+  <!-- End Hospital Section -->
+
+  
+
+  <script src="js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

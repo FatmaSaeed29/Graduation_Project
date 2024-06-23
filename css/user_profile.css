@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,600;1,300;1,500;1,600&family=Big+Shoulders+Display:wght@700&family=El+Messiri:wght@400;500&family=Josefin+Sans:ital,wght@1,300;1,600&family=Kumbh+Sans:wght@400;700&family=Lalezar&family=Noto+Sans+Arabic:wght@300;400;500;600&family=Nunito&family=Open+Sans:ital,wght@0,400;0,500;0,600;1,300;1,400;1,500&family=Overpass:wght@300;600&family=Pacifico&family=Poppins:wght@400;500;600;700&family=Raleway:ital,wght@0,500;0,600;0,800;1,300;1,700&family=Rubik:wght@300;400;500&family=Ubuntu:ital,wght@0,400;0,500;1,700&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+}
+/* body{
+    perspective: 100vh;
+} */
+
+/* Start Navbar Section */
+nav{
+    position: relative;
+    font-family: 'El Messiri', sans-serif;
+    background-color: rgb(235, 230, 230);
+    position: fixed;
+}
+nav .navbar-toggler-icon{
+    margin-left: -250px !important;
+}
+nav .container-fluid .logo{
+    position: absolute;
+    right: 20px;
+    top: 7px;
+}
+nav .container-fluid .nav-menu{
+    direction: rtl;
+    margin-left: -20px;
+}
+
+nav .navbar-brand{
+    margin-right: -160px;
+    position: absolute;
+    top: 26px;
+}
+nav .nav-ul{
+    margin-left: 245px;
+}
+nav .profile img{
+    position: absolute;
+    width: 70px;
+    top: 18px;
+    right: 1250px;
+    
+}
+/*
+nav form .search-input{
+    border: none;
+    border-top-left-radius:0px ;
+    border-bottom-left-radius: 0px;
+}*/
+nav form .input-group{
+    margin-left: -70px;
+}
+/* Nav Hover Effect */
+nav ul li .nav-link{
+    position: relative;
+    padding: 10px 20px;
+    /* font-weight: bold; */
+}
+nav ul li .nav-link:before,
+nav ul li .nav-link:after{
+    content:"";
+    position: absolute;
+    border:1px solid rgb(167, 35, 2); 
+    left: 0;
+    top:0; 
+    transition: all 0.5s;
+}
+nav ul li .nav-link:before{
+    border-top-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 2px;
+    border-right-width: 2px;
+    height: 96%; 
+    width: 98%;
+    transform: scale3d(1,0,1);
+}
+nav ul li .nav-link:hover:before{
+    transform: scale3d(1,1,1);
+}
+nav ul li .nav-link:after{
+    border-top-width: 2px;
+    border-bottom-width: 2px;
+    border-left-width: 0;
+    border-right-width: 0;
+    height: 95%; 
+    width: 98%;
+    transform: scale3d(0,1,1);
+    transform-origin:right;
+}
+nav ul li .nav-link:hover:after{
+    transform: scale3d(1,1,1);
+    transition-delay: .1s;
+}
+
+
+/* End Navbar Section */
+
+
+
+/* Start Welcome Section */
+
+
+
+.glow-on-hover {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: rgb(214, 86, 108);
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg,  #002bff, #3151f1,#00ffd5, #2d4ff7, #002bff);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    /* color: #000 */
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* background: #111; */
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+
+/* End Welcome Section */

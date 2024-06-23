@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,600;1,300;1,500;1,600&family=Big+Shoulders+Display:wght@700&family=El+Messiri:wght@400;500&family=Josefin+Sans:ital,wght@1,300;1,600&family=Kumbh+Sans:wght@400;700&family=Lalezar&family=Noto+Sans+Arabic:wght@300;400;500;600&family=Nunito&family=Open+Sans:ital,wght@0,400;0,500;0,600;1,300;1,400;1,500&family=Overpass:wght@300;600&family=Pacifico&family=Poppins:wght@400;500;600;700&family=Raleway:ital,wght@0,500;0,600;0,800;1,300;1,700&family=Rubik:wght@300;400;500&family=Ubuntu:ital,wght@0,400;0,500;1,700&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow-y: hidden;
+}
+
+/* Start Navbar Section */
+nav{
+    position: relative;
+    font-family: 'El Messiri', sans-serif;
+    background-color: rgb(235, 230, 230);
+    position: fixed;
+}
+nav .navbar-toggler-icon{
+    margin-left: -250px !important;
+}
+nav .container-fluid .logo{
+    position: absolute;
+    right: 20px;
+    top: 7px;
+}
+nav .container-fluid .nav-menu{
+    direction: rtl;
+    margin-left: -20px;
+}
+
+nav .navbar-brand{
+    margin-right: -160px;
+    position: absolute;
+    top: 26px;
+}
+nav .nav-ul{
+    margin-left: 245px;
+}
+nav .profile img{
+    position: absolute;
+    width: 70px;
+    top: 18px;
+    right: 1250px;
+    
+}
+/*
+nav form .search-input{
+    border: none;
+    border-top-left-radius:0px ;
+    border-bottom-left-radius: 0px;
+}*/
+nav form .input-group{
+    margin-left: -70px;
+}
+/* Nav Hover Effect */
+nav ul li .nav-link{
+    position: relative;
+    padding: 10px 20px;
+    /* font-weight: bold; */
+}
+nav ul li .nav-link:before,
+nav ul li .nav-link:after{
+    content:"";
+    position: absolute;
+    border:1px solid rgb(167, 35, 2); 
+    left: 0;
+    top:0; 
+    transition: all 0.5s;
+}
+nav ul li .nav-link:before{
+    border-top-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 2px;
+    border-right-width: 2px;
+    height: 96%; 
+    width: 98%;
+    transform: scale3d(1,0,1);
+}
+nav ul li .nav-link:hover:before{
+    transform: scale3d(1,1,1);
+}
+nav ul li .nav-link:after{
+    border-top-width: 2px;
+    border-bottom-width: 2px;
+    border-left-width: 0;
+    border-right-width: 0;
+    height: 95%; 
+    width: 98%;
+    transform: scale3d(0,1,1);
+    transform-origin:right;
+}
+nav ul li .nav-link:hover:after{
+    transform: scale3d(1,1,1);
+    transition-delay: .1s;
+}
+
+
+/* End Navbar Section */
+
+
+/* start operation form */
+
+
+.container1
+{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.container1 .rgba
+{
+    background-color: rgba(52, 214, 243, 0.2);
+    width: 100%;
+    height: 300px;
+}
+
+.container1 .operation_form
+{
+    text-align: center;
+    width: 60%;
+    height: 400px;
+    position: absolute;
+    top:54%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    background-color:rgba(52, 214, 243, 0.6);
+    color:rgb(235, 230, 230);
+    
+}
+.container1 .operation_form h2
+{
+    color: rgb(2, 2, 105);
+    margin-top: 60px !important;
+}
+
+.container1 .operation_form form .right
+{
+    width: 35%;
+    height: 40px;
+    margin-left: 450px;
+    margin-top: 35px;
+    margin-bottom: 10px;
+}
+.container1 .operation_form form .left
+{
+    width: 35%;
+    height: 40px;
+    margin-top: -55px;
+    margin-left: 80px;
+    margin-bottom: 10px;
+}
+
+.container1 .operation_form form .center
+{
+    width: 655px;
+    height: 45px;
+    margin-left: 80px;
+    padding-top: 10px;
+}
+
+.container1 .operation_form form .btn
+{
+    width: 150px;
+    height: 50px; 
+    margin-top: 15px;
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 24px;
+    background-color:rgb(2, 2, 105)
+}
+.container1 .operation_form form .btn:hover
+{
+    background-color: rgb(59, 59, 255);
+    border: none;
+}
+
+
+
+
+
+
+
+
+    
+
+

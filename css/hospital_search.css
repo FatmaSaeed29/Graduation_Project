@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,600;1,300;1,500;1,600&family=Big+Shoulders+Display:wght@700&family=El+Messiri:wght@400;500&family=Josefin+Sans:ital,wght@1,300;1,600&family=Kumbh+Sans:wght@400;700&family=Lalezar&family=Noto+Sans+Arabic:wght@300;400;500;600&family=Nunito&family=Open+Sans:ital,wght@0,400;0,500;0,600;1,300;1,400;1,500&family=Overpass:wght@300;600&family=Pacifico&family=Poppins:wght@400;500;600;700&family=Raleway:ital,wght@0,500;0,600;0,800;1,300;1,700&family=Rubik:wght@300;400;500&family=Ubuntu:ital,wght@0,400;0,500;1,700&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow-x: hidden;
+}
+/* Start Navbar Section */
+nav{
+    position: relative;
+    font-family: 'El Messiri', sans-serif;
+    background-color: rgb(235, 230, 230);
+    position: fixed;
+}
+nav .navbar-toggler-icon{
+    margin-left: -250px !important;
+}
+nav .container-fluid .logo{
+    position: absolute;
+    right: 20px;
+    top: 7px;
+}
+nav .container-fluid .nav-menu{
+    direction: rtl;
+    margin-left: -20px;
+}
+
+nav .navbar-brand{
+    margin-right: -160px;
+    position: absolute;
+    top: 26px;
+}
+nav .nav-ul{
+    margin-left: 100px;
+}
+nav form .search{
+    margin-top:18px; 
+    margin-right: 120px;
+}
+nav form .search-input{
+    border: none;
+    border-top-left-radius:0px ;
+    border-bottom-left-radius: 0px;
+}
+nav form .input-group{
+    margin-left: -60px;
+}
+/* Nav Hover Effect */
+nav ul li .nav-link{
+    position: relative;
+    padding: 10px 20px;
+    /* font-weight: bold; */
+}
+nav ul li .nav-link:before,
+nav ul li .nav-link:after{
+    content:"";
+    position: absolute;
+    border:1px solid rgb(167, 35, 2); 
+    left: 0;
+    top:0; 
+    transition: all 0.5s;
+}
+nav ul li .nav-link:before{
+    border-top-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 2px;
+    border-right-width: 2px;
+    height: 96%; 
+    width: 98%;
+    transform: scale3d(1,0,1);
+}
+nav ul li .nav-link:hover:before{
+    transform: scale3d(1,1,1);
+}
+nav ul li .nav-link:after{
+    border-top-width: 2px;
+    border-bottom-width: 2px;
+    border-left-width: 0;
+    border-right-width: 0;
+    height: 95%; 
+    width: 99%;
+    transform: scale3d(0,1,1);
+    transform-origin:right;
+}
+nav ul li .nav-link:hover:after{
+    transform: scale3d(1,1,1);
+    transition-delay: .1s;
+}
+
+/* End Navbar Section */
+/* Start Hospiatl Section */
+.hospital-content{
+    margin-top: 300px;
+    font-family: 'El Messiri', sans-serif;
+}
+.hospital-content .hospital-title2 h1{
+    font-size: 27px;
+}
+.search input{
+    width: 100%;
+    padding: 10px 20px;
+}
+.accordion-button::after {
+    margin-left:0!important;
+    margin-right:auto;
+    
+}
+.accordion-button::after {
+    rotate: 180deg;
+}
+.accordion {
+    margin: auto;
+    width: 400px;
+  }
+  .accordion input {
+    display: none;
+  }
+  .box {
+    position: relative;
+    background: white;
+      height: 64px;
+      transition: all .15s ease-in-out;
+  }
+  .box::before {
+      content: '';
+      position: absolute;
+      display: block;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      pointer-events: none;
+      box-shadow: 0 -1px 0 #e5e5e5,0 0 2px rgba(0,0,0,.12),0 2px 4px rgba(0,0,0,.24);
+  }
+  header.box {
+    background: #00BCD4;
+    z-index: 100;
+    cursor: initial;
+    box-shadow: 0 -1px 0 #e5e5e5,0 0 2px -2px rgba(0,0,0,.12),0 2px 4px -4px rgba(0,0,0,.24);
+  }
+  header .box-title {
+    margin: 0;
+    font-weight: normal;
+    font-size: 16pt;
+    color: white;
+    cursor: initial;
+  }
+  .box-title {
+    width: calc(100% - 40px);
+    height: 64px;
+    line-height: 64px;
+    padding: 0 20px;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-touch-callout: none;-webkit-user-select: none;-khtml-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;
+  }
+  .box-content {
+    width: calc(100% - 40px);
+    padding: 30px 20px;
+    font-size: 11pt;
+    color: rgba(0,0,0,.54);
+    display: none;
+  }
+  .box-close {
+    position: absolute;
+    height: 64px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    display: none;
+  }
+  input:checked + .box {
+    height: auto;
+    margin: 16px 0;
+      box-shadow: 0 0 6px rgba(0,0,0,.16),0 6px 12px rgba(0,0,0,.32);
+  }
+  input:checked + .box .box-title {
+    border-bottom: 1px solid rgba(0,0,0,.18);
+  }
+  input:checked + .box .box-content,
+  input:checked + .box .box-close {
+    display: inline-block;
+  }
+  .arrows section .box-title {
+    padding-left: 44px;
+    width: calc(100% - 64px);
+  }
+  .arrows section .box-title:before {
+    position: absolute;
+    display: block;
+    content: '\203a';
+    font-size: 18pt;
+    left: 20px;
+    top: -2px;
+    transition: transform .15s ease-in-out;
+    color: rgba(0,0,0,.54);
+  }
+  input:checked + section.box .box-title:before {
+    transform: rotate(90deg);
+  }
+/* End Hospiatl Section */
